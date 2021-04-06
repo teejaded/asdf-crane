@@ -1,0 +1,11 @@
+language: shell
+before_script:
+  - git clone https://github.com/asdf-vm/asdf.git
+  - . asdf/asdf.sh
+script:
+  - asdf plugin-add crane ./
+  - asdf list-all crane
+  - asdf plugin-test crane ./ 'crane --help'
+os:
+  - osx
+  - linux
