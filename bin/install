@@ -25,7 +25,7 @@ install() {
   local download_path="$tmp_download_dir/go-containerregistry.tar.gz"
 
   local download_url
-  download_url="https://github.com/google/go-containerregistry/releases/download/v${version}/go-containerregistry_$(uname)_$(arch).tar.gz"
+  download_url="https://github.com/google/go-containerregistry/releases/download/v${version}/go-containerregistry_$(uname)_$(uname -m).tar.gz"
 
   mkdir -p "${bin_install_path}"
 
@@ -62,11 +62,6 @@ unarchive() {
 
   echo "Unknown archive type"
   exit 1
-}
-
-arch() {
-  [ ! "x86_64" = "$(uname -m)" ] && echo "architecture $(uname -m), is not supported" && exit 1
-  echo -n "amd64"
 }
 
 install "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH"
