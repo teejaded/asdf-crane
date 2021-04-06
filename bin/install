@@ -39,11 +39,11 @@ install() {
   mkdir -p "${bin_install_path}"
 
   echo "Cleaning previous binaries"
-  rm -f $binary_path 2>/dev/null || true
+  rm -f $bin_path 2>/dev/null || true
 
   echo "Copying binary"
-  cp "${tmp_download_dir}/crane" ${binary_path}
-  chmod +x ${binary_path}
+  cp "${tmp_download_dir}/crane" ${bin_path}
+  chmod +x ${bin_path}
 }
 
 unarchive() {
