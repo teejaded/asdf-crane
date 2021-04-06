@@ -1,12 +1,12 @@
-# asdf-calicoctl
-[![Build Status](https://travis-ci.org/teejaded/asdf-calicoctl.svg?branch=master)](https://travis-ci.org/teejaded/asdf-calicoctl)
+# asdf-crane
+[![Build Status](https://travis-ci.org/teejaded/asdf-crane.svg?branch=master)](https://travis-ci.org/teejaded/asdf-crane)
 
-[Calicoctl](https://github.com/roboll/calicoctl) plugin for the [asdf](https://github.com/asdf-vm/asdf) version manager.
+[crane](https://github.com/roboll/crane) plugin for the [asdf](https://github.com/asdf-vm/asdf) version manager.
 
 ## Install
 
 ```
-asdf plugin-add calicoctl https://github.com/teejaded/asdf-calicoctl.git
+asdf plugin-add crane https://github.com/teejaded/asdf-crane.git
 ```
 
 ## Use
